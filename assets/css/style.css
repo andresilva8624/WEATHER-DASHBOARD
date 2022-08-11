@@ -1,6 +1,9 @@
-
+body {
+background-image: url(/assets/images/nature.jpg);
+background-size: 1600px;
+}
 header {
-    background-color: #000120
+    background-color:#0276fd;
 }
 div.title {
     
@@ -9,16 +12,18 @@ div.title {
 }
 div.title h1 {
     padding: 10px;
+    color: white;
 }
 
 
 main.dashboard {
-    background-color: rgb(247, 247, 247);
+    background-color: transparent;
 }
 
 
 div.recent-searches h2 {
     font-size: 1.2rem;
+    color:white;
 }
 
 div.cityList {
@@ -31,7 +36,7 @@ div.city {
 
 div.cityName {
     background-color: white;
-    color: black;   
+    color: white;   
 }
 
 
@@ -42,15 +47,18 @@ div.currentWeather h2,
 div.currentWeather h3 {
     font-size: 1.3rem;
     margin: 10px;
+    color: white;
 }
 
 x
 div.fiveDay p {
     font-size: .8rem;
+    color: white;
 }
 
 div.fiveDay p.card-title {
     font-weight: bold;
+    color: white;
     color: white;
 }
 
