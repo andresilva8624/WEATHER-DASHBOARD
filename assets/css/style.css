@@ -1,9 +1,10 @@
 body {
-background-image: url(/assets/images/nature.jpg);
-background-size: 1600px;
+background: url('C:/Users/andre/assignment-6/weather-dashboard/assets/images/nature.jpg');
+background-size: 1980px;
+min-height: 100%
 }
 header {
-    background-color:#0276fd;
+    background-color:#0250a8;
 }
 div.title {
     
