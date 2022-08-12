@@ -1,74 +1,73 @@
 body {
-background: url('C:/Users/andre/assignment-6/weather-dashboard/assets/images/nature.jpg');
-background-size: 1980px;
-min-height: 100%
+  background: url("C:/Users/andre/assignment-6/weather-dashboard/assets/images/nature.jpg");
+  background-size: 1980px;
+  min-height: 100%;
 }
 header {
-    background-color:#0250a8;
+  background-color: #0250a8;
 }
 div.title {
-    
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
 }
 div.title h1 {
-    padding: 10px;
-    color: white;
+  padding: 10px;
+  color: white;
 }
-
 
 main.dashboard {
-    background-color: transparent;
+  background-color: transparent;
 }
 
-
 div.recent-searches h2 {
-    font-size: 1.2rem;
-    color:white;
+  font-size: 1.2rem;
+  color: white;
 }
 
 div.cityList {
-    margin-top: 20px;
+  margin-top: 20px;
+}
+label {
+  color: white;
 }
 
 div.city {
-    padding: 10px;
+  padding: 10px;
 }
 
 div.cityName {
-    background-color: white;
-    color: white;   
+  color: white;
 }
 
-
-
-x
+div.currentWeather {
+  margin-bottom: 20px;
+}
 
 div.currentWeather h2,
 div.currentWeather h3 {
-    font-size: 1.3rem;
-    margin: 10px;
-    color: white;
+  font-size: 1.3rem;
+  margin: 10px;
+  color: white;
 }
 
-x
+span#uv-index {
+  color: white;
+}
 div.fiveDay p {
-    font-size: .8rem;
-    color: white;
+  font-size: 0.8rem;
+  color: white;
 }
 
 div.fiveDay p.card-title {
-    font-weight: bold;
-    color: white;
-    color: white;
+  font-weight: bold;
+  color: white;
+  color: white;
 }
 
 .card {
-    background-color: #0276fd;
+  background-color: #0276fd;
 }
 
 .text-muted {
-    color: white !important;
+  color: white !important;
 }
-
-
