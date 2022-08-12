@@ -61,7 +61,20 @@ $(document).ready(function () {
       return `https://api.openweathermap.org/data/2.5/weather?id=${id}&appid=${apiKey}`;
   }
 
-
+   // Function to display the last 5 searched cities
+   function displayCities(pastCities) {
+      cityListEl.empty();
+      pastCities.splice(8);
+      let sortedCities = [...pastCities];
+      sortedCities.sort(compare);
+      sortedCities.forEach(function (location) {
+          let cityDiv = $('<div>').addClass('col-12 city');
+          let cityBtn = $('<button>').addClass('btn btn-light city-btn').text(location.city);
+          cityDiv.append(cityBtn);
+          cityListEl.append(cityDiv);
+      });
+  }
+  
   // Function to color the UV Index based on EPA color scale: https://www.epa.gov/sunsafety/uv-index-scale-0
   function setUVIndexColor(uvi) {
       if (uvi < 3) {
@@ -136,7 +149,17 @@ $(document).ready(function () {
       });
   }
 
- 
+   // Function to display the last searched city
+   function displayLastSearchedCity() {
+      if (pastCities[0]) {
+          let queryURL = buildURLFromId(pastCities[0].id);
+          searchWeather(queryURL);
+      } else {
+          // if no past searched cities, load Los Angeles weather data
+          let queryURL = buildURLFromInputs("Los Angeles");
+          searchWeather(queryURL);
+      }
+  }
 
   // Click handler for search button
   $('#search-btn').on('click', function (event) {
@@ -157,6 +180,17 @@ $(document).ready(function () {
       }
   }); 
   
+  // Click handler for city buttons to load that city's weather
+  $(document).on("click", "button.city-btn", function (event) {
+      let clickedCity = $(this).text();
+      let foundCity = $.grep(pastCities, function (storedCity) {
+          return clickedCity === storedCity.city;
+      })
+      let queryURL = buildURLFromId(foundCity[0].id)
+      searchWeather(queryURL);
+  });
+
+// Initialization - when page loads
 
   // load any cities in local storage into array
   loadCities();

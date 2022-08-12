@@ -5,10 +5,13 @@ body {
 }
 header {
   background-color: #0250a8;
+  box-shadow: 10px 5px 5px;
+  padding: .5%;
 }
 div.title {
   color: white;
   text-align: center;
+  font-size: 500%;
 }
 div.title h1 {
   padding: 10px;
@@ -29,45 +32,95 @@ div.cityList {
 }
 label {
   color: white;
+  font-size: 150%;
 }
 
 div.city {
   padding: 10px;
 }
+.container{
 
+  padding-top:1%;
+}
 div.cityName {
   color: white;
+  font-size: xx-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 div.currentWeather {
   margin-bottom: 20px;
+  box-shadow: 10px 5px 5px;
+  background: #1770d6;
+  opacity: 80%;
+  background-image: linear-gradient(left, #0250a8, transparent);
 }
 
 div.currentWeather h2,
 div.currentWeather h3 {
-  font-size: 1.3rem;
+  font-size: 2.3rem;
   margin: 10px;
+  color: white;
+  opacity: none;
+}
+
+.pt-1,
+.pl-2 {
+  font-size: x-large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #0f76ec;
+  margin-left: 20px;
+}
+.pl-2,
+#text {
   color: white;
 }
 
 span#uv-index {
   color: white;
 }
-div.fiveDay p {
-  font-size: 0.8rem;
+
+div.fiveDay {
+}
+div.fiveDay h2 {
+  font-size: 3rem;
   color: white;
+  background: #0250a8;
+text-decoration: underline;
+  opacity: 92%;
+  box-shadow: 10px 5px 5px rgb(65, 63, 63);
+  padding: 2%;
 }
 
 div.fiveDay p.card-title {
   font-weight: bold;
+  font-size: medium;
   color: white;
   color: white;
 }
+div.form-row {
+  justify-content: space-evenly;
+}
 
 .card {
-  background-color: #0276fd;
+  background-color: #135eb4;
+  box-shadow: 5px 5px 5px;
+}
+.card:hover {
+  display: flex;
+  box-shadow: 10px 5px 5px;
+  opacity: 90%;
+  transform: scale(1.3);
 }
 
 .text-muted {
   color: white !important;
+  font-size: medium;
+}
+
+button#search-btn {
+  margin-top: 10%;
+}
+.row {
+  justify-content: space-between;
 }
