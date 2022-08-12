@@ -1,6 +1,6 @@
 # Weather Dashboard
 
-The goal of the project was to create a Weather Dashboard. It includes a search bar to locate the desired city, a list of previous searched cities, also displays the current city searched showing the temperature, humidity, wind speed and UV Index and the next 5 days of weather conditions.
+The goal of the project was to create a Weather Dashboard. It includes a search bar to locate the desired city, a list of previous searched cities, also displays the current city searched showing the temperature, humidity, wind speed and UV Index and the next 5 days of weather conditions. Enjoy! 😀
 
 
 
