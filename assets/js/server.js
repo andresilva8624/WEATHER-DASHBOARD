@@ -1,1 +1,1 @@
-app.use('/local-files', express.static('/'));
+// app.use('/local-files', express.static('/'));
