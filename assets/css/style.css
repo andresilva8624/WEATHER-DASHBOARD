@@ -37,13 +37,25 @@ label {
 
 div.city {
   padding: 10px;
+  color: white;
+  background-color: #1770d6;;
+  margin: 4px;
+  cursor: pointer;
+  max-width: 150px;
+
+
+
+}
+
+div.city:hover{
+background-color: #02428b;
 }
 .container{
 
   padding-top:1%;
 }
 div.cityName {
-  color: white;
+  
   font-size: xx-large;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -121,4 +133,8 @@ button#search-btn {
 }
 .row {
   justify-content: space-between;
+}
+
+.btn {
+  border: var(--bs-btn-border-width) solid var(--bs-btn-border-color)
 }
