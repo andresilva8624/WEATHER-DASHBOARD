@@ -23,6 +23,7 @@ function fetchByCityName(city) {
       return res.json();
     })
     .then(function (data) {
+    // Get previous cities from local storage, read through the data and check if data.name exists in that list. If it does, you don't wanna push to previous cities, otherwise you do want to push to previous cities. Theres an Array called the include.
       previousCities.push(data.name);
       localStorage.setItem("previousCities", JSON.stringify(previousCities));
       displayCities();
@@ -176,3 +177,9 @@ function displayCities() {
 
 searchBtn.on("click", handleUserInput);
 displayCities();
+
+cityListEl.on("click", function(event){
+let city = event.target.textContent
+fetchByCityName(city)
+});
+''
