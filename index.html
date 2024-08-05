@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -22,11 +21,9 @@
     </header>
     <main class="container dashboard">
         <div class="row p-2">
-
             <!-- Right column with current weather and 5 day forecast -->
             <div class="col-sm-12 col-md-9 order-md-5">
                 <div class="row">
-            
                     <!-- Current Weather Forecast -->
                     <div class="col-12 currentWeather p-2">
                         <div class="d-flex cityName">
@@ -40,86 +37,14 @@
                         <p class="pl-2">Wind Speed: <span id="wind"></span> MPH</p>
                         <p class="pl-2">UV Index: <span id="uv-index" class="p-1"></span></p>
                     </div>
-
                     <!-- 5 Day forecast -->
                     <div class="col-12 fiveDay">
                         <h2>5 Day Forecast</h2>
                         <hr>
-                        <div class="row" id="5dayforecast">
-                            <!-- <div class="col-sm-10 col-md-4 offset-lg-1 col-lg-2 p-1">
-                                <div class="card day-0 m-0 text-center">
-                                    <div class="card-body p-1">
-                                        <p class="card-title">Day 1</p>
-                                        <img class="fiveDay-img mb-2" />
-                                        <p class="card-subtitle mb-2 text-muted">Temp: <span
-                                        class="fiveDay-temp"></span>
-                                        &deg;F</p>
-                                        <p class="card-subtitle mb-2 text-muted">Humidity: <span
-                                        class="fiveDay-humid"></span>%</p>
-                                    </div>
-                                </div>
-                            </div> -->
-
-                            <!-- <div class="col-sm-10 col-md-4 col-lg-2 p-1 text-center">
-                                <div class="card day-1 m-0">
-                                    <div class="card-body p-1">
-                                        <p class="card-title">Day 2</p>
-                                        <img class="fiveDay-img mb-2" />
-                                        <p class="card-subtitle mb-2 text-muted">Temp: <span
-                                        class="fiveDay-temp"></span>
-                                        &deg;F</p>
-                                        <p class="card-subtitle mb-2 text-muted">Humidity: <span
-                                        class="fiveDay-humid"></span>%</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-10 col-md-4 col-lg-2 p-1 text-center">
-                                <div class="card day-2 m-0">
-                                    <div class="card-body p-1">
-                                        <p class="card-title">Day 3</p>
-                                        <img class="fiveDay-img mb-2" />
-                                        <p class="card-subtitle mb-2 text-muted">Temp: <span
-                                        class="fiveDay-temp"></span>
-                                        &deg;F</p>
-                                        <p class="card-subtitle mb-2 text-muted">Humidity: <span
-                                        class="fiveDay-humid"></span>%</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-10 col-md-4 col-lg-2 p-1 text-center">
-                                <div class="card day-3 m-0">
-                                    <div class="card-body p-1">
-                                        <p class="card-title">Day 4</p>
-                                        <img class="fiveDay-img mb-2" />
-                                        <p class="card-subtitle mb-2 text-muted">Temp: <span
-                                        class="fiveDay-temp"></span>
-                                        &deg;F</p>
-                                        <p class="card-subtitle mb-2 text-muted">Humidity: <span
-                                        class="fiveDay-humid"></span>%</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-10 col-md-4 col-lg-2 p-1 text-center">
-                                <div class="card day-4 m-0">
-                                    <div class="card-body p-1">
-
-                                        <p class="card-title">Day 5</p>
-                                        <img class="fiveDay-img mb-2" />
-                                        <p class="card-subtitle mb-2 text-muted">
-                                        Temp: <span class="fiveDay-temp"></span> &deg;F</p>
-                                        <p class="card-subtitle mb-2 text-muted">Humidity: <span
-                                        class="fiveDay-humid"></span>%</p>
-                                    </div>
-                                </div>
-                            </div> -->
-                        </div>    
+                        <div class="row" id="5dayforecast"></div>    
                     </div> 
                 </div>
             </div>           
-
             <!-- Left column - city search form and previously searched cities list -->
             <div class="col-sm-12 col-md-3 left-panel order-md-1">
                 <form>
@@ -129,35 +54,26 @@
                             <input type="text" placeholder="City" class="form-control" id="city-input">
                         </div>
                         <div class="col-auto">
-                            <button type=" submit" class="btn btn-primary mb-2 align-text-bottom" id="search-btn">Search
+                            <button type="submit" class="btn btn-primary mb-2 align-text-bottom" id="search-btn">Search
                                 <i class="fas fa-search"></i></button>
                         </div>
                     </div>
                 </form>
                 <hr>
- 
-                <div class="row recent-searches  mt-2">
+                <div class="row recent-searches mt-2">
                     <div class="col-sm-12">
                         <h2>Recent searches:</h2>
                     </div>
                 </div>
                 <!-- Previously searched cities -->
-                <div class="row cityList m-0">
-                    <!-- City buttons generated here-->
-                </div>
+                <div class="row cityList m-0"></div>
             </div>
-
         </div>
     </main>
- 
     <!-- jQuery -->
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Moment -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <script src="./assets/js/pseudo-code.js"></script>
-    
 </body>
-</html>            
+</html>
