@@ -3,16 +3,19 @@ body {
   background-size: 1980px;
   min-height: 100%;
 }
+
 header {
   background-color: #0250a8;
   box-shadow: 10px 5px 5px;
   padding: .5%;
 }
+
 div.title {
   color: white;
   text-align: center;
   font-size: 500%;
 }
+
 div.title h1 {
   padding: 10px;
   color: white;
@@ -30,6 +33,7 @@ div.recent-searches h2 {
 div.cityList {
   margin-top: 20px;
 }
+
 label {
   color: white;
   font-size: 150%;
@@ -38,24 +42,21 @@ label {
 div.city {
   padding: 10px;
   color: white;
-  background-color: #1770d6;;
+  background-color: #1770d6;
   margin: 4px;
   cursor: pointer;
   max-width: 150px;
-
-
-
 }
 
-div.city:hover{
-background-color: #02428b;
+div.city:hover {
+  background-color: #02428b;
 }
-.container{
 
-  padding-top:1%;
+.container {
+  padding-top: 1%;
 }
+
 div.cityName {
-  
   font-size: xx-large;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -73,7 +74,6 @@ div.currentWeather h3 {
   font-size: 2.3rem;
   margin: 10px;
   color: white;
-  opacity: none;
 }
 
 .pt-1,
@@ -83,6 +83,7 @@ div.currentWeather h3 {
   color: #0f76ec;
   margin-left: 20px;
 }
+
 .pl-2,
 #text {
   color: white;
@@ -96,7 +97,7 @@ div.fiveDay h2 {
   font-size: 3rem;
   color: white;
   background: #0250a8;
-text-decoration: underline;
+  text-decoration: underline;
   opacity: 92%;
   box-shadow: 10px 5px 5px rgb(65, 63, 63);
   padding: 2%;
@@ -106,8 +107,8 @@ div.fiveDay p.card-title {
   font-weight: bold;
   font-size: medium;
   color: white;
-  color: white;
 }
+
 div.form-row {
   justify-content: space-evenly;
 }
@@ -116,6 +117,7 @@ div.form-row {
   background-color: #135eb4;
   box-shadow: 5px 5px 5px;
 }
+
 .card:hover {
   display: flex;
   box-shadow: 10px 5px 5px;
@@ -131,10 +133,11 @@ div.form-row {
 button#search-btn {
   margin-top: 10%;
 }
+
 .row {
   justify-content: space-between;
 }
 
 .btn {
-  border: var(--bs-btn-border-width) solid var(--bs-btn-border-color)
+  border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
 }
